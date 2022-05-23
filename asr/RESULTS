@@ -1,0 +1,13 @@
+%WER 75.59 [ 220387 / 291565, 4433 ins, 51688 del, 164266 sub ] exp/mono/decode_test_ramc/cer_8_0.0
+%WER 54.39 [ 158582 / 291565, 7157 ins, 32262 del, 119163 sub ] exp/tri1a/decode_test_ramc/cer_10_0.0
+%WER 52.06 [ 151781 / 291565, 7383 ins, 31273 del, 113125 sub ] exp/tri1b/decode_test_ramc/cer_11_0.0
+%WER 47.70 [ 139062 / 291564, 7022 ins, 30142 del, 101898 sub ] exp/tri2a/decode_test_ramc/cer_10_0.0
+%WER 50.80 [ 148113 / 291564, 7323 ins, 33045 del, 107745 sub ] exp/tri3b/decode_test_ramc/cer_11_0.0
+
+# fintune model for magicdata-ramc test、 accented dev、accented test
+%WER 27.14 [ 58803 / 216650, 2147 ins, 14375 del, 42281 sub ] exp/chain_ramc/cnn_tdnn_cnn_1a_sp/decode_dev_accented_decode/cer_11_0.0
+%WER 24.28 [ 43295 / 178319, 1561 ins, 9004 del, 32730 sub ] exp/chain_ramc/cnn_tdnn_cnn_1a_sp/decode_test_accented_decode/cer_11_0.0
+%WER 21.47 [ 62594 / 291564, 4167 ins, 10413 del, 48014 sub ] exp/chain_ramc/cnn_tdnn_cnn_1a_sp/decode_test_ramc/cer_10_0.0
+
+# fintune model for accented test
+%WER 19.24 [ 34316 / 178319, 1997 ins, 5477 del, 26842 sub ] exp/chain_finetune/cnn_tdnn_cnn_1a_finetune_sp/decode_test_accented/cer_10_0.0

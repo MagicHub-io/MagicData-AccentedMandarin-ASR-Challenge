@@ -11,7 +11,7 @@
 4. 打分：标点符号、非语言符不参与最终 WER 计算。
 
 ## DATA Preparation
-```
+```bash
 # magicdata-ramc
 extract_magicdata_ramc.py
 
@@ -22,3 +22,26 @@ extract_magicdata_accented_dev.py
 extract_magicdata_accented_test_noref.py
 # extract_magicdata_accented_test_ref.py
 ```
+
+## Training
+```bsah
+./run.sh
+```
+
+## Submit
+submit csv file
+```
+uttid,hyp
+...
+
+```
+
+## Baseline result
+| Model| Corr | Sub  | Del  |Ins   | WER  |
+|------|------|------|------|------|------|
+|CNN+TDNNF|76.596|18.35|5.049|0.875|24.28|
+|CNN+TDNNF+finetune|81.876|15.053|3.07|1.12|19.24|
+
+## Baseline model
+[CNN+TDNNF+finetune]()
+

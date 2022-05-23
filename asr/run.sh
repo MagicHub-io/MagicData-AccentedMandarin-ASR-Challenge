@@ -186,7 +186,8 @@ fi
 
 # Decode accented test
 if [ $stage -le 13 ]; then
-  cat exp/chain_finetune/cnn_tdnn_cnn_1a_finetune_sp/decode_test_accented/log/decode* | grep -a "\.wav" | grep -v -a LOG | grep -v -a WARNING > exp/decode/test_accented_decode_submit.txt
+  cat exp/chain_finetune/cnn_tdnn_cnn_1a_finetune_sp/decode_test_accented/log/decode* | grep -a "\.wav" | grep -v -a LOG | grep -v -a WARNING > exp/test_accented_decode_submit.txt
+  cat exp/test_accented_decode_submit.txt | cut -d "-" -f 2- > exp/test_submit.csv
 fi
 
 exit 0;

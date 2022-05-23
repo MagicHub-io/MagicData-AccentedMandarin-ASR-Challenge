@@ -43,5 +43,7 @@ uttid,hyp
 |CNN+TDNNF+finetune|81.876|15.053|3.07|1.12|19.24|
 
 ## Baseline model
+采用传统的Hybrid的建模方式，基于Kaldi开源工具搭建了简易的重口音对话ASR 赛道的基线系统。首先用chain模型对北京爱数智慧提供的160小时中文对话数据训练了一个CNN+TDNN-F的基础模型，然后使用14小时的重口音普通话对话数据集进行了声学模型的自适应。
+
 [CNN+TDNNF+finetune]()
 

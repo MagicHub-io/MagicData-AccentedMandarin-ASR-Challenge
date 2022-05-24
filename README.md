@@ -1,7 +1,7 @@
 # MagicData-AccentedMandarin-ASR-Challenge
 
 ## 规则说明
-1. 数据：训练数据只能使用180小时的[MagicData-RAMC](https://magichub.com/datasets/magicdata-ramc/)和MagicData提供14小时的重口音普通话对话数据[重口音数据]()。
+1. 数据：训练数据只能使用180小时的[MagicData-RAMC](https://magichub.com/datasets/magicdata-ramc/)或[SLR123](https://www.openslr.org/123/)和MagicData提供14小时的重口音普通话对话数据下载见邮件。
 允许使用公开的噪声数据集 (如 MUSAN (openslr-17), RIRNoise (openslr-28)) 进行数据增广，但需要注明来源。禁止使用其他来源的数据(包括无监督数据)训练出的预训练模型。
 
 2. 方法：使用ASR建模方法进行建模，允许包括模型融合，预训练-finetune，无监督自适应在内的所有方法，但需要符合1中的数据使用规范。
@@ -45,5 +45,5 @@ uttid,hyp
 ## Baseline model
 采用传统的Hybrid的建模方式，基于Kaldi开源工具搭建了简易的重口音对话ASR 赛道的基线系统。首先用chain模型对北京爱数智慧提供的160小时中文对话数据训练了一个CNN+TDNN-F的基础模型，然后使用14小时的重口音普通话对话数据集进行了声学模型的自适应。
 
-[CNN+TDNNF+finetune]()
+[CNN+TDNNF+finetune](https://freedata.oss-cn-beijing.aliyuncs.com/MagicData-AccentedMandarin-ASR-Challenge.tar.gz)
 

@@ -46,7 +46,14 @@ extract_magicdata_accented_test_noref.py
             "device":"iPhone",
             "scene":"indoor",
             "channel":"C0",
-            "segments":Array[2]
+            "segments":[
+                {
+                    "uttid":"S0001_0_0_0_10000640003_2_1651589423000.wav-0001047-0002054",
+                    "spkid":"",
+                    "begin_time":1.047,
+                    "end_time":2.054,
+                    "text":"[ENS]"
+                } ]
         }
     ],
     "speakes":[

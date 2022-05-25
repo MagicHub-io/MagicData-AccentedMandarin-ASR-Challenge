@@ -23,6 +23,44 @@ extract_magicdata_accented_test_noref.py
 # extract_magicdata_accented_test_ref.py
 ```
 
+##  关于Accented data的数据格式
+样例
+```jaon
+{
+    "dataset":"magicdata-accented-dev",
+    "language":"ZH",
+    "version":"0.1.0",
+    "creation_time":"2022-05-20",
+    "update_time":"2022-05-20",
+    "description":"Chinese accent Mandarin",
+    "copyright":"MagicData",
+    "audios":[
+        {
+            "aid":"S0001_0_0_0_10000640003_2_1651589423000.wav",
+            "path":"magicdata-accented-data/dev/audios/S0001_0_0_0_10000640003_2_1651589423000.wav",
+            "total":1234.603,
+            "valid":430.197,
+            "topic":[
+                "entertainment"
+            ],
+            "device":"iPhone",
+            "scene":"indoor",
+            "channel":"C0",
+            "segments":Array[2]
+        }
+    ],
+    "speakes":[
+        {
+            "spkid":"G10000001",
+            "gender":"Female",
+            "age":16,
+            "place_birth":"CHINA,Guangdong",
+            "place_residence":"CHINA,Guangdong"
+        }
+    ]
+}
+```
+
 ## Training
 ```bsah
 ./run.sh

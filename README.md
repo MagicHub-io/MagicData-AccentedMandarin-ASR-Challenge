@@ -69,7 +69,13 @@ extract_magicdata_accented_test_noref.py
 ```
 
 ### Test data
-* 测试集文件结构
+* 下载后的压缩文件大小：
+```bash
+$du -l magicdata-accented-data-test.tar.gz
+1478496 magicdata-accented-data-test.tar.gz
+```
+
+* 解压后测试集文件结构
 ```
 ../magicdata-accented-data/test
 ├── audios
@@ -77,17 +83,15 @@ extract_magicdata_accented_test_noref.py
 └── magicdata_test_uttid_submit.csv  
 ```
 
+* 测试集中语音有效时长约11小时。
+
 * 最终提交文件：`magicdata_test_uttid_submit.csv`,确保uttid一致
 ```
 uttid,hyp
 S0001_0_0_0_10000640002_2_1651589422000.wav-0005758-0008260,北京 爱 数 智慧 语音 采集
 ```
 
-* 压缩文件大小：
-```bash
-$du -l magicdata-accented-data-test.tar.gz
-1478496 magicdata-accented-data-test.tar.gz
-```
+
 * 测试集文件格式示例
 ```json
 {
@@ -117,13 +121,6 @@ $du -l magicdata-accented-data-test.tar.gz
                     "begin_time":5.758,
                     "end_time":8.26,
                     "text":""
-                },
-                {
-                    "uttid":"S0001_0_0_0_10000640002_2_1651589422000.wav-0012260-0012880",
-                    "spkid":"",
-                    "begin_time":12.26,
-                    "end_time":12.88,
-                    "text":""
                 }
             ]
         },
@@ -144,13 +141,6 @@ $du -l magicdata-accented-data-test.tar.gz
                     "spkid":"",
                     "begin_time":1.13,
                     "end_time":2.14,
-                    "text":""
-                },
-                {
-                    "uttid":"S0001_0_0_0_10000640963_2_1652196918000.wav-0004220-0007360",
-                    "spkid":"",
-                    "begin_time":4.22,
-                    "end_time":7.36,
                     "text":""
                 }
             ]

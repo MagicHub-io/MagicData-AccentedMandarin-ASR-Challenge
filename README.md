@@ -68,6 +68,14 @@ extract_magicdata_accented_test_noref.py
 }
 ```
 
+### Test data
+```
+../magicdata-accented-data/test
+├── audios
+├── magicdata_test_noref.json
+└── magicdata_test_uttid_submit.csv
+```
+
 ## Training
 ```bsah
 ./run.sh

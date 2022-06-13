@@ -69,12 +69,96 @@ extract_magicdata_accented_test_noref.py
 ```
 
 ### Test data
+* 测试集文件结构
 ```
 ../magicdata-accented-data/test
 ├── audios
 ├── magicdata_test_noref.json
-└── magicdata_test_uttid_submit.csv
+└── magicdata_test_uttid_submit.csv  
 ```
+
+* 最终提交文件：`magicdata_test_uttid_submit.csv`,确保uttid一致
+```
+uttid,hyp
+S0001_0_0_0_10000640002_2_1651589422000.wav-0005758-0008260,北京 爱 数 智慧 语音 采集
+```
+
+* 压缩文件大小：
+```bash
+$du -l magicdata-accented-data-test.tar.gz
+1478496 magicdata-accented-data-test.tar.gz
+```
+* 测试集文件格式示例
+```json
+{
+    "dataset":"magicdata-accented-test",
+    "language":"ZH",
+    "version":"0.1.0",
+    "creation_time":"2022-05-20",
+    "update_time":"2022-05-20",
+    "description":"Chinese accent Mandarin",
+    "copyright":"MagicData",
+    "audios":[
+        {
+            "aid":"S0001_0_0_0_10000640002_2_1651589422000.wav",
+            "path":"magicdata-accented-data/test/audios/S0001_0_0_0_10000640002_2_1651589422000.wav",
+            "total":1235.051,
+            "valid":672.612,
+            "topic":[
+                "entertainment"
+            ],
+            "device":"iPhone",
+            "scene":"indoor",
+            "channel":"C0",
+            "segments":[
+                {
+                    "uttid":"S0001_0_0_0_10000640002_2_1651589422000.wav-0005758-0008260",
+                    "spkid":"",
+                    "begin_time":5.758,
+                    "end_time":8.26,
+                    "text":""
+                },
+                {
+                    "uttid":"S0001_0_0_0_10000640002_2_1651589422000.wav-0012260-0012880",
+                    "spkid":"",
+                    "begin_time":12.26,
+                    "end_time":12.88,
+                    "text":""
+                }
+            ]
+        },
+        {
+            "aid":"S0001_0_0_0_10000640963_2_1652196918000.wav",
+            "path":"magicdata-accented-data/test/audios/S0001_0_0_0_10000640963_2_1652196918000.wav",
+            "total":1810.901,
+            "valid":729.072,
+            "topic":[
+                "food"
+            ],
+            "device":"iPhone",
+            "scene":"indoor",
+            "channel":"C0",
+            "segments":[
+                {
+                    "uttid":"S0001_0_0_0_10000640963_2_1652196918000.wav-0001130-0002140",
+                    "spkid":"",
+                    "begin_time":1.13,
+                    "end_time":2.14,
+                    "text":""
+                },
+                {
+                    "uttid":"S0001_0_0_0_10000640963_2_1652196918000.wav-0004220-0007360",
+                    "spkid":"",
+                    "begin_time":4.22,
+                    "end_time":7.36,
+                    "text":""
+                }
+            ]
+        }
+    ]
+}
+```
+
 
 ## Training
 ```bsah

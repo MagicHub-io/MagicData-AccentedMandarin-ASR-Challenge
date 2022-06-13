@@ -49,7 +49,7 @@ fi
 # L
 if [ $stage -le 3 ]; then
   utils/prepare_lang.sh --position-dependent-phones false \
-    ${dict_dir} "<UNK>" data/local/lang_nosp data/lang_nosp || exit 1;
+    ${dict_dir} "<UNK>" data/local/lang data/lang || exit 1;
 fi
 
 # G compilation, check LG composition
